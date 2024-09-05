@@ -65,66 +65,6 @@ function animate() {
 animate();
 
 
-
-
-
-// import * as THREE from 'three';
-
-// // Create a scene, camera, and renderer
-// const scene = new THREE.Scene();
-// const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-// camera.position.z = 5;
-
-// const renderer = new THREE.WebGLRenderer();
-
-// renderer.setSize(window.innerWidth, window.innerHeight);
-// document.body.appendChild(renderer.domElement);
-
-// // Create   a flag plane geometry and texture
-// const flagGeometry = new THREE.PlaneGeometry(2, 1, 10, 10); // Adjust dimensions as needed
-// const flagTexture = new THREE.TextureLoader().load('Flag_of_Vietnam.png'); // Replace with your flag image path
-
-// // Create a material with the flag texture and a displacement map
-// const flagMaterial = new THREE.MeshStandardMaterial({
-//     map: flagTexture,
-//     displacementMap: flagTexture,
-//     displacementScale: 0.2,
-//     displacementBias: 0.1,
-// });
-
-// // Create a mesh using the flag geometry and material
-// const flagMesh = new THREE.Mesh(flagGeometry, flagMaterial);
-// scene.add(flagMesh);
-
-// // Create a wind simulation effect
-// const windForce = new THREE.Vector3(0.05, 0, 0); // Adjust wind strength and direction as needed
-// const windSpeed = 0.09;
-
-// // Animation loop
-// function animate() {
-//     requestAnimationFrame(animate);
-
-//     // Apply wind force to the flag mesh vertices
-//     for (let i = 0; i < flagMesh.geometry.attributes.position.count; i++) {
-//         const vertex = flagMesh.geometry.attributes.position.array[i * 3];
-//         const displacement = windForce.clone().multiplyScalar(Math.sin(vertex * windSpeed + Date.now() * 0.001));
-//         flagMesh.geometry.attributes.position.array[i * 3] = vertex + displacement.x;
-//         flagMesh.geometry.attributes.position.array[i * 3 + 1] = displacement.y;
-//     }
-
-//     flagMesh.geometry.attributes.position.needsUpdate = true;
-
-//     renderer.render(scene, camera);
-// }
-
-// animate();
-
-
-
-
-
-
-
 // import javascriptLogo from './javascript.svg'
 // import viteLogo from '/vite.svg'
 // import { setupCounter } from './counter.js'
